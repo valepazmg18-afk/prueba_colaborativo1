@@ -1,4 +1,5 @@
 body {
+    /* Utiliza la fuente Raleway cargada en el HTML */
     font-family: "Raleway", sans-serif;
 }
 
@@ -14,7 +15,7 @@ body {
     align-items: center;
 }
 
-/* Portafolio Section (Contenedor de imágenes) */
+/* Portafolio Section (Contenedor de imágenes para los 6 proyectos) */
 #Portafolio .image-top {
     /* Clases para mostrar la imagen como fondo de tarjeta */
     height: 200px; /* Altura del contenedor de imagen */
@@ -25,7 +26,16 @@ body {
     border-top-right-radius: var(--bs-card-border-radius);
 }
 
-/* Estilo para las tarjetas en general (Educación y Experiencia) */
+.image-top {
+    height: 150px; /* Define la altura de la zona de la imagen */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    border-top-left-radius: .25rem; /* Copia el radio de la tarjeta de Bootstrap */
+    border-top-right-radius: .25rem; /* Copia el radio de la tarjeta de Bootstrap */
+}
+
+/* Estilo para las tarjetas en general (Educación, Experiencia y Portafolio) */
 .card {
     transition: transform 0.3s ease-in-out;
 }
@@ -45,4 +55,11 @@ body {
     #Contacto form label {
         font-weight: 400;
     }
+}
+
+/* El estilo original que proporcionaste para 'Mis-trabajos' (ahora #Portafolio) */
+/* El estilo original que proporcionaste para la marca del navbar en móviles */
+@media (max-width: 768px) {
+  /* No necesario ya que no hay imagen de logo en el navbar */
+  /* .navbar-brand{ width: 100px; } */
 }
