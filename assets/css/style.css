@@ -1,0 +1,40 @@
+body {
+    /* Utiliza la fuente Raleway cargada en el HTML */
+    font-family: "Raleway", sans-serif;
+}
+
+/* Hero Section (Cabecera) */
+#Hero-Section {
+    /* Asumiendo que tendrás una imagen de fondo en assets/img/ */
+    background-image: url("../img/1.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Cambié a center para mejor visualización por defecto */
+    /* Asegura que tenga una altura mínima para mostrar la imagen si no hay contenido */
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
+}
+
+/* Sección Experiencia Laboral (similar a "Mis trabajos" del ejemplo) */
+#Experiencia .card {
+    /* Añade algo de estilo visual a las tarjetas */
+    transition: transform 0.3s ease-in-out;
+}
+
+#Experiencia .card:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el ratón */
+}
+
+/* Contacto */
+#Contacto form label {
+    font-weight: 700;
+    color: #373a3c;
+}
+
+/* Media Query para Contacto en dispositivos más pequeños */
+@media (max-width: 768px) {
+    #Contacto form label {
+        font-weight: 400;
+    }
+}
