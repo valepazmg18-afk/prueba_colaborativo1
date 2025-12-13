@@ -1,29 +1,37 @@
 body {
-    /* Utiliza la fuente Raleway cargada en el HTML */
     font-family: "Raleway", sans-serif;
 }
 
 /* Hero Section (Cabecera) */
 #Hero-Section {
-    /* Asumiendo que tendrás una imagen de fondo en assets/img/ */
-    background-image: url("../img/1.jpg"); 
+    /* Asumiendo que tienes una imagen de fondo en assets/img/bg-hero.jpg */
+    background-image: url("../img/bg-hero.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; /* Cambié a center para mejor visualización por defecto */
-    /* Asegura que tenga una altura mínima para mostrar la imagen si no hay contenido */
+    background-position: center;
     min-height: 80vh; 
     display: flex;
     align-items: center;
 }
 
-/* Sección Experiencia Laboral (similar a "Mis trabajos" del ejemplo) */
-#Experiencia .card {
-    /* Añade algo de estilo visual a las tarjetas */
+/* Portafolio Section (Contenedor de imágenes) */
+#Portafolio .image-top {
+    /* Clases para mostrar la imagen como fondo de tarjeta */
+    height: 200px; /* Altura del contenedor de imagen */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: var(--bs-card-border-radius);
+    border-top-right-radius: var(--bs-card-border-radius);
+}
+
+/* Estilo para las tarjetas en general (Educación y Experiencia) */
+.card {
     transition: transform 0.3s ease-in-out;
 }
 
-#Experiencia .card:hover {
-    transform: translateY(-5px); /* Efecto sutil al pasar el ratón */
+.card:hover {
+    transform: translateY(-3px);
 }
 
 /* Contacto */
